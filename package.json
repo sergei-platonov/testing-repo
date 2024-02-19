@@ -10,10 +10,11 @@
     "lint": "stylelint \"./src/**/*.css\"",
     "lintfix": "stylelint \"./src/**/*.css\" --fix",
     "checkall": "npm run check && npm run lint",
-    "fixall": "npm run format && npm run lintfix",
+    "fixAll": "npm run format && npm run lintfix",
     "build": "gulp build",
     "dev": "gulp",
-    "fixAndBuild": "npm run fixAll && npm run build" 
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "lintfixAndPush": "npm run fixAll && git add . && git commit -m \"подготовили к публикации\" && git push"
   },
   "author": "",
   "license": "ISC",
